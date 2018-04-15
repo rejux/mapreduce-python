@@ -17,6 +17,11 @@
 # then
 # >>> exec(open('one_process_MR.py').read())
 
+# (from command line)
+# $ python -c "import sys ; sys.argv = ['./input/sentence.txt'] ; exec(open('one_process_MR.py').read())"
+# or
+# $ python -c "import sys ; sys.argv = ['./input/text.txt'] ; exec(open('one_process_MR.py').read())"
+
 
 import sys ; sys.stdout.flush()
 

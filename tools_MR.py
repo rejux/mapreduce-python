@@ -5,9 +5,6 @@
 ## tools_MR.py
 ####################
 
-# execute:
-# exec(open('C:\workspace\map-reduce\python\\tools_MR.py').read())
-
 import os
 import sys ; sys.stdout.flush()
 import itertools
@@ -15,20 +12,19 @@ import itertools
 from multiprocessing import Pool
 from multiprocessing import Pool
 
-# ===========
-# to_2D
-# ===========
+###########
+## to_2D
+###########
 
 # tribute: https://stackoverflow.com/questions/14681609/create-a-2d-list-out-of-1d-list 
 
 def to_2D(l):
     return [l[i:i+1] for i in range(0, len(l), 1)]
 
-
-# ==================
+###########
 # load()
-# ==================
-	
+###########
+
 """
 Load the contents the file at the given
 path into a big list of string (e.g. words) and return it.
@@ -99,11 +95,11 @@ function.
 
 def sanitize_word(w):
 
-    # print("[DEBUG] \tSanitizing word {} in process id = {}".format(w, os.getpid()))
-    
-    if not w.isalnum():        
+    print("w={}".format(w))
+
+    if not w.isalnum():
         # ex. what's, ...
-        i = w.find("'")            
+        i = w.find("'")
         if i != -1:
             p1 = w[0:i]
             if w[i+1:] == 's':
@@ -111,12 +107,9 @@ def sanitize_word(w):
             elif w[i+1:] == 'll':
                 p2 = 'will'
             # PUT other transformation rules here
-            
             return [p1,p2]
-        
         else:
             if len(w) > 0:
-                 
                # Strip punctuation from the front or the back
                if not w[0].isalnum():
                    return [w[1:]]
@@ -129,7 +122,6 @@ def sanitize_word(w):
 
     # the word isalnum()
     return [w]
-            
 
 # ===================
 # sanitize()

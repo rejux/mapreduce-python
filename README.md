@@ -4,8 +4,6 @@ This repository contains the source code for the articles series about MapReduce
 * *Part 1:* https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html. 
 
 
-The author is Regis KLA, Ph.D. 
-(regis.kla@digital-brain.biz)
 
 ## 1. Getting Started
 
@@ -46,63 +44,55 @@ intested in.
 
 ### 2.1. Part 1
 
+Execute the *simple_MR.py* program:
+
 ```
 $ cd mapreduce-python
 $ python simple_MR.py
 ```
-
-
-
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Execute the *one_process_MR.py* program:
+* from the Pyton REPL:
 
 ```
-Give an example
+>>> import sys
+>>> sys.argv = ['./input/text.txt']
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+or
 
 ```
-Give an example
+>>> sys.argv = ['./input/sentence.txt']
 ```
 
-## Deployment
+then
 
-Add additional notes about how to deploy this on a live system
+```
+>>> exec(open('one_process_MR.py').read())
+```
 
-## Built With
+* from the command line:
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+```
+$ cd mapreduce-python
+$ python -c "import sys ; sys.argv = ['./input/sentence.txt'] ; exec(open('one_process_MR.py').read())"
+```
 
-## Contributing
+or
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+```
+$ python -c "import sys ; sys.argv = ['./input/text.txt'] ; exec(open('one_process_MR.py').read())"
+```
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Régis Kla, Ph.D. (klaregis@gmail.com)** - *Blog* - [RegisKla](https://klaregis-portal.appspot.com/)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [MIT-ICENSE.md](MIT-LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+See the MapReduce articles series:
+* [MapReduce1](https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html.)
 
