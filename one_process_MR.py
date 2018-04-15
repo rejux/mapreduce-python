@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+# vim: set fileencoding=utf-8
+
 ########################
 ## one_process_MR.py  ##
 ########################

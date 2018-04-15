@@ -1,40 +1,58 @@
-# The MapReduce Articles Series for https://klaregis-portal.appspot.com/
+# The MapReduce Articles Series Source Code
 
-This repository contains the source code for the articles series of https://klaregis-portal.appspot.com/.
-The author is Regis KLA, Ph.D. (regis.kla@digital-brain.biz)
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-The only prerequisites is the Python interpreter.
-
-### Installing
-
-To install this code, perform the following steps:
+This repository contains the source code for the articles series about MapReduce:
+* *Part 1:* https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html. 
 
 
+The author is Regis KLA, Ph.D. 
+(regis.kla@digital-brain.biz)
 
+## 1. Getting Started
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Please clone this directory by doing: 
 
 ```
-Give the example
+$ git clone https://github.com/rejux/mapreduce-python.git
+$ cd mapreduce-python
 ```
 
-And repeat
+You now have a copy of the **mapreduce-python** project on your host. 
+
+### 1.1. Content For Part 1
+
+The content for the part 1 of the series is as follows:
 
 ```
-until finished
+$ ls -l
+total 28
+drwxr-xr-x 2 xxxxxx xxxxxx 4096 avril 15 08:52 input
+-rw-r--r-- 1 xxxxxx xxxxxx 1101 avril 15 08:52 MIT-LICENSE.md
+-rw-r--r-- 1 xxxxxx xxxxxx 1041 avril 15 08:52 one_process_MR.py
+-rw-r--r-- 1 xxxxxx xxxxxx 2224 avril 15 08:52 README.md
+-rw-r--r-- 1 xxxxxx xxxxxx 2436 avril 15 08:52 simple_MR.py
+-rw-r--r-- 1 xxxxxx xxxxxx 6267 avril 15 08:52 tools_MR.py
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+### 1.2. Prerequisites
 
-## Running the tests
+The only prerequisites is the Python interpreter. The code has been run under a Python 3.5.x interpreter; 
+but even a 2.7.x interpreter will suffice.
+
+## 2. Running
+
+To run the code, execute the following commands according the part of the series you are currently reading.
+Remember to confer to the articles that also provide detailed instructions regarding the part you are 
+intested in.
+
+### 2.1. Part 1
+
+```
+$ cd mapreduce-python
+$ python simple_MR.py
+```
+
+
+
 
 Explain how to run the automated tests for this system
 

@@ -1,6 +1,9 @@
-## ====================
+# -*- coding: utf-8 -*-
+# vim: set fileencoding=utf-8
+
+####################
 ## tools_MR.py
-## ====================
+####################
 
 # execute:
 # exec(open('C:\workspace\map-reduce\python\\tools_MR.py').read())
