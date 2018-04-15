@@ -1,7 +1,7 @@
 # The MapReduce Articles Series Source Code
 
 This repository contains the source code for the articles series about MapReduce:
-* *Part 1:* https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html. 
+* [MapReduce1](https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html.)
 
 
 
@@ -85,7 +85,7 @@ $ python -c "import sys ; sys.argv = ['./input/text.txt'] ; exec(open('one_proce
 
 ## Authors
 
-* **Régis Kla, Ph.D. (klaregis@gmail.com)** - *Blog* - [RegisKla](https://klaregis-portal.appspot.com/)
+* **Régis Kla, Ph.D. (klaregis@gmail.com)** - [RegisKlaBlog](https://klaregis-portal.appspot.com/)
 
 ## License
 
@@ -93,6 +93,5 @@ This project is licensed under the MIT License - see the [MIT-ICENSE.md](MIT-LIC
 
 ## Acknowledgments
 
-See the MapReduce articles series:
-* [MapReduce1](https://klaregis-portal.appspot.com/software/articles/0001/mapred-part1.html.)
+See the MapReduce articles series.
 
